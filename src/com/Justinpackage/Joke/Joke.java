@@ -3,16 +3,23 @@ package com.Justinpackage.Joke;
 public class Joke {
     private String joke;
 
-    Joke(String joke) {
-        this.joke = joke;
+    protected final void changeJoke(String newJoke){
+        this.joke = newJoke;
+    }
+    protected final String getJoke(){
+        return this.joke;
     }
 
-    public Joke() {
-
+    public void printJoke(){
+        System.out.println(this.joke + " Sharing good jokes");
     }
 
+    public Joke(){
 
-    public String getJoke() {
-        return joke;
+    }
+    public Joke(String joke){
+        this.changeJoke(joke);
+
+
     }
 }

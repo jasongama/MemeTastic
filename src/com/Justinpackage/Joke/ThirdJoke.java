@@ -1,16 +1,17 @@
 package com.Justinpackage.Joke;
 
 public class ThirdJoke extends Joke {
-    private String joke;
-    ThirdJoke(String joke) {
-        super(joke);
-        this.joke =joke;
-    }
-    public ThirdJoke() {
+
+    public void printJoke(){
+        System.out.println(this.getJoke() + " What did one pirate say to another during a game of hide-and-seek? I sea you!");
 
     }
-    @Override
-    public String getJoke() {
-        return joke;
+
+    public ThirdJoke(){
+
     }
+    public ThirdJoke(String joke){
+        super(joke);
+    }
+
 }

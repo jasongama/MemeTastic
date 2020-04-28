@@ -1,16 +1,17 @@
 package com.Justinpackage.Joke;
 
 public class SecondJoke extends Joke {
-    private String joke;
-    SecondJoke(String joke) {
-        super(joke);
-        this.joke =joke;
+
+    public void printJoke(){
+        System.out.println(this.getJoke() + " How do penguins make a decision? Flipper coin.");
+
     }
+
     public SecondJoke(){
 
     }
-    @Override
-    public String getJoke() {
-        return joke;
+    public SecondJoke(String joke){
+        super(joke);
     }
+
 }

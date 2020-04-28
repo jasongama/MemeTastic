@@ -1,16 +1,16 @@
 package com.Justinpackage.Joke;
 public class PenguinJoke extends Joke {
-    private String joke;
 
-    PenguinJoke(String joke) {
+    public void printJoke(){
+        System.out.println(this.getJoke() + " Why was the pirate ship so cheap? It was on sail!");
+
+    }
+
+    public PenguinJoke(){
+
+    }
+
+    public PenguinJoke(String joke){
         super(joke);
-        this.joke = joke;
-    }
-    public  PenguinJoke(){
-
-    }
-    @Override
-    public String getJoke() {
-        return joke;
     }
 }
