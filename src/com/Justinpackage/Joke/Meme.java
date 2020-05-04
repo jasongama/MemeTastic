@@ -2,7 +2,7 @@ package com.Justinpackage.Joke;
 
   public class Meme {
     private String image;
-    private String joke;
+    private Joke joke;
    public static void main(String[] args){
 
       Joke thePenguinJoke = new PenguinJoke();
@@ -15,9 +15,8 @@ package com.Justinpackage.Joke;
 
 
 
-
-      private void setJoke(Joke thePenguinJoke) {
-          thePenguinJoke.printJoke();
+      public void setJoke(Joke thePenguinJoke) {
+          this.joke = thePenguinJoke;
 
       }
 
@@ -28,7 +27,7 @@ package com.Justinpackage.Joke;
 
       public String showMessage() {
 
-          return image;
+          return image + joke.getJoke();
       }
 
   }

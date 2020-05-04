@@ -10,7 +10,7 @@ public class SecondJoke extends Joke {
     public SecondJoke(){
 
     }
-    public SecondJoke(String joke){
+    public SecondJoke(Joke joke){
         super(joke);
     }
 

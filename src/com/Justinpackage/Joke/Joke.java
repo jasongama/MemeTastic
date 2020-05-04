@@ -1,23 +1,23 @@
 package com.Justinpackage.Joke;
 
 public class Joke {
-    private String joke;
+    public Joke joke;
 
-    protected final void changeJoke(String newJoke){
+    protected final void changeJoke(Joke newJoke){
+
         this.joke = newJoke;
     }
-    protected final String getJoke(){
+    protected final Joke getJoke(){
         return this.joke;
     }
 
-    public void printJoke(){
-        System.out.println(this.joke + " Sharing good jokes");
-    }
+
+
 
     public Joke(){
 
     }
-    public Joke(String joke){
+    public Joke(Joke joke){
         this.changeJoke(joke);
 
 
