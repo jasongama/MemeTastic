@@ -1,13 +1,13 @@
 package com.Justinpackage.Joke;
 
 public class Joke {
-    public Joke joke;
+    public String joke;
 
-    protected final void changeJoke(Joke newJoke){
+    protected void changeJoke(String newJoke){
 
         this.joke = newJoke;
     }
-    protected final Joke getJoke(){
+    protected final String getJoke(){
         return this.joke;
     }
 
@@ -17,7 +17,7 @@ public class Joke {
     public Joke(){
 
     }
-    public Joke(Joke joke){
+    public Joke(String joke){
         this.changeJoke(joke);
 
 
