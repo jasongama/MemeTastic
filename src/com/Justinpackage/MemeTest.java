@@ -40,6 +40,21 @@ import static org.junit.Assert.assertEquals;
          meme.setImage("\uD83D\uDC27");
          assertEquals("\uD83D\uDC27 How do penguins make a decision? Flipper coin.", meme.showMessage());
      }
-
+     @Test
+     public void MemeSecondJoke() {
+         Joke joke = new SecondJoke();
+         Meme meme = new Meme();
+         meme.setJoke(joke);
+         meme.setImage("\uD83D\uDC27");
+         assertEquals("\uD83D\uDC27 What kind of grades does a pirate get in school? High seas!", meme.showMessage());
+     }
+     @Test
+     public void MemeThirdJoke() {
+         Joke joke = new ThirdJoke();
+         Meme meme = new Meme();
+         meme.setJoke(joke);
+         meme.setImage("\uD83D\uDC27");
+         assertEquals("\uD83D\uDC27 How much did the pirate pay for his peg and hook? An arm and a leg!", meme.showMessage());
+     }
 
  }
