@@ -1,4 +1,4 @@
-package com.Justinpackage.Joke;
+package com.justinpackage.Joke;
 
   public class Meme {
     private String image;

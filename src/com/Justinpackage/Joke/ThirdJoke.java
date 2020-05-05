@@ -1,13 +1,13 @@
-package com.Justinpackage.Joke;
+package com.justinpackage.Joke;
 
 public class ThirdJoke extends Joke {
 
-    public  String  joke  = " Why couldn't the pirate crew play cards?";
-    protected final void changeJoke(String newJoke){
+    public  String  joke  = " How much did the pirate pay for his peg and hook? An arm and a leg!";
+    protected  void changeJoke(String newJoke){
 
         this.joke = newJoke;
     }
-    public final String getJoke(){
+    public  String getJoke(){
         return this.joke;
     }
 

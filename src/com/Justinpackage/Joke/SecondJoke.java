@@ -1,10 +1,15 @@
-package com.Justinpackage.Joke;
+package com.justinpackage.Joke;
 
 public class SecondJoke extends Joke {
 
-    public void printJoke(){
-        System.out.println(this.getJoke() + " How do penguins make a decision? Flipper coin.");
 
+    public  String  joke  = " What kind of grades does a pirate get in school? High seas!";
+    protected final void changeJoke(String newJoke){
+
+        this.joke = newJoke;
+    }
+    public final String getJoke(){
+        return this.joke;
     }
 
     public SecondJoke(){

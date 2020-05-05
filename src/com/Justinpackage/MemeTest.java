@@ -1,8 +1,5 @@
- package com.Justinpackage;
-import com.Justinpackage.Joke.Joke;
-import com.Justinpackage.Joke.PenguinJoke;
-import com.Justinpackage.Joke.ThirdJoke;
-import org.junit.jupiter.api.DynamicTest;
+ package com.justinpackage;
+import com.justinpackage.Joke.*;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.Assert.assertEquals;
@@ -10,12 +7,39 @@ import static org.junit.Assert.assertEquals;
 
  public class MemeTest {
     @Test
-    protected void shouldTellPenguinJoke() {
+    protected void shouldTellAPenguinJoke() {
 
         Joke joke = new PenguinJoke();
+
         joke.getJoke();
         assertEquals(" How do penguins make a decision? Flipper coin.", joke.getJoke());
     }
+     @Test
+     public void shouldTellAThirdJoke() {
+
+         Joke joke = new ThirdJoke();
+
+         joke.getJoke();
+         assertEquals(" How much did the pirate pay for his peg and hook? An arm and a leg!", joke.getJoke());
+     }
+
+     @Test
+     public void shouldTellASecondPenguinJoke() {
+
+         Joke joke = new SecondJoke();
+
+         joke.getJoke();
+         assertEquals(" What kind of grades does a pirate get in school? High seas!", joke.getJoke());
+     }
+
+     @Test
+     public void Memes() {
+        Joke joke = new PenguinJoke();
+         Meme meme = new Meme();
+         meme.setJoke(joke);
+         meme.setImage("\uD83D\uDC27");
+         assertEquals("\uD83D\uDC27 How do penguins make a decision? Flipper coin.", meme.showMessage());
+     }
 
 
-}
+ }

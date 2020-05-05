@@ -1,7 +1,7 @@
-package com.Justinpackage.Joke;
+package com.justinpackage.Joke;
 
 public class Joke {
-    public  String  joke  = " What did one pirate say to another during a game of hide-and-seek? I sea you!";
+    public  String  joke  = " Why are pirates called pirates? Because they arrrr!";
 
     protected void changeJoke(String newJoke){
 

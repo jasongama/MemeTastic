@@ -1,4 +1,4 @@
-package com.Justinpackage.Joke;
+package com.justinpackage.Joke;
 public class PenguinJoke extends Joke {
 
     public  String  joke  = " How do penguins make a decision? Flipper coin.";
